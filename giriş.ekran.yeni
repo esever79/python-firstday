@@ -1,0 +1,149 @@
+import sys
+import random
+def sayı_oyunu():
+    while True:   
+        while True:
+            rastgele_rakam = random.randint(0,10)                                  
+
+            kullanıcı_rakam= input("RAKAM GİRİNİZ!! (0,1,2..10): ## Çıkmak için 'q' giriniz.")
+            if rastgele_rakam == kullanıcı_rakam:
+                print ("Tebrikler. BİLDİNİZ:)")
+            if not rastgele_rakam == kullanıcı_rakam: 
+                a=("rasgele_rakam" + str(rastgele_rakam) + "e eşitti. \n TEKRAR DENEYİNİZ:(")
+                print (a)
+            if kullanıcı_rakam == q:
+                print ("Menüye döndünüz.")
+            break
+
+                
+    def ınteger():
+        while True: 
+            def dene(typ, message):
+                try:
+                    result = typ(message)
+                    return True, result 
+                except:
+                    return False, "Hatalı Input"
+            print(dene(int, input("lütfen bir integer giriniz:")))
+
+    def faktör():
+        while True:
+            sayi = int(input('Sayı değeri giriniz : '))
+            carp = 1
+            for oku in range(sayi):
+                carp = carp*(oku+1)
+
+            print('Faktoriyel : ',carp)
+    def asal():
+        while True:
+            x = int(input("Sayı:"))
+
+            isAsalFlag = True
+
+            for i in range(2, x):
+                if(x % i == 0):
+                    isAsalFlag = False
+
+            print("Asal mı?:", isAsalFlag)
+    
+    ##atamalar.
+    kullanıcı_adı= ("admin")
+    kullanıcı_şifre= ("password")
+    güvenlik_sorusu= ("en sevdiğin yemek")
+    güvenlik_sorusu_cevap= ("hamburger")
+    sayı_tahmin= ("A")
+    ınteger_çevirme= ("B")
+    faktöriyel= ("C")
+    asal_sayı= ("D")
+    çıkış_yap= ("E")
+
+
+
+    while True:
+        kullanıcının_adı= input("Kullanıcı adınızı giriniz")
+        if kullanıcı_adı == kullanıcının_adı:
+            kullanıcın_şifresi= input("Parolanızı giriniz")
+            if kullanıcın_şifresi == kullanıcı_şifre:
+                print ("GİRİŞ BAŞARILI \nHOŞGELDİNİZ \nMENÜ \nA- Sayı tahmin oyunu \nB- Integer'a çevirme \nC- Faktöriylel hesaplama \nD- Asal sayı kontrolü \nE- Çıkış Yap")
+                seç= input("SEÇİM YAPINIZ. (A,B...E)")
+                if seç == sayı_tahmin:
+                    print ("Sayı tahmin oyununu seçtiniz.")
+                    sayı_oyunu()
+                if seç == ınteger_çevirme:
+                    print ("Integer'a çevirme seçtiniz.")
+                    ınteger()
+                if seç == faktöriyel:
+                    print ("Faktöriyel hesaplama seçtiniz.")
+                    faktör()
+                if seç == asal_sayı:
+                    print ("Asal sayı bulma seçtiniz.")
+                    asal()
+                if seç == çıkış_yap:
+                    print ("HOŞÇAKAL:))")
+
+                sys.exit()
+        print ("Giriş başarısız lütfen tekrar deneyiniz \nSON 2 HAKKINIZ")
+
+        kullanıcının_adı= input("Kullanıcı adınızı giriniz")
+        if kullanıcı_adı == kullanıcının_adı:
+            kullanıcın_şifresi= input("Parolanızı giriniz")
+            if kullanıcın_şifresi == kullanıcı_şifre:
+                print ("GİRİŞ BAŞARILI \nHOŞGELDİNİZ")
+                print ("MENÜ \nA- Sayı tahmin oyunu \nB- Integer'a çevirme \nC- Faktöriylel hesaplama \nD- Asal sayı kontrolü \nE- Çıkış Yap")
+                seç= input("SEÇİM YAPINIZ. (A,B...E)")
+                if seç == sayı_tahmin:
+                    print ("Sayı tahmin oyununu seçtiniz.")
+                    sayı_oyunu()
+                if seç == ınteger_çevirme:
+                    print ("Integer'a çevirme seçtiniz.")
+                    ınteger()
+                if seç == faktöriyel:
+                    print ("Faktöriyel hesaplama seçtiniz.")
+                    faktör()
+                if seç == asal_sayı:
+                    print ("Asal sayı bulma seçtiniz.")
+                    asal()
+                if seç == çıkış_yap:
+                    print ("HOŞÇAKAL:))")
+
+
+                sys.exit()
+        print ("Giriş başarısız lütfen tekrar deneyiniz \nDİKKAT! SON HAKKINIZ")
+        kullanıcının_adı= input("Kullanıcı adınızı giriniz")
+        if kullanıcı_adı == kullanıcının_adı:
+            kullanıcın_şifresi= input("Parolanızı giriniz:")
+            if kullanıcın_şifresi == kullanıcı_şifre:
+                print ("GİRİŞ BAŞARILI \nHOŞGELDİNİZ")
+                print ("MENÜ \nA- Sayı tahmin oyunu \nB- Integer'a çevirme \nC- Faktöriylel hesaplama \nD- Asal sayı kontrolü \nE- Çıkış Yap")
+                seç= input("SEÇİM YAPINIZ. (A,B...E)")
+                if seç == sayı_tahmin:
+                    print ("Sayı tahmin oyununu seçtiniz.")
+                    sayı_oyunu()
+                if seç == ınteger_çevirme:
+                    print ("Integer'a çevirme seçtiniz.")
+                    ınteger()
+                if seç == faktöriyel:
+                    print ("Faktöriyel hesaplama seçtiniz.")
+                    faktör()
+                if seç == asal_sayı:
+                    print ("Asal sayı bulma seçtiniz.")
+                    asal()
+                if seç == çıkış_yap:
+                    print ("HOŞÇAKAL:))")
+
+                sys.exit()
+        print ("Giriş başarısız. Lütfen şifrenizi yenileyiniz")
+        sorulan_soru= input("Size verilen güvenlik sorusunu yazınız")
+        if güvenlik_sorusu == sorulan_soru:
+            güvenlik_cevap= input("Güvenlik sorusuna verdiğiniz cevabı yazınız")
+            if güvenlik_sorusu_cevap == güvenlik_cevap:
+                while True:
+                    yeni_şifre= input("Yeni parolanızı giriniz:")
+                    yeni_şifre_tekrar= input("Yeni parolanızı tekrar giriniz:")
+                    if not yeni_şifre == yeni_şifre_tekrar: 
+                        print ("PAROLALAR AYNI DEĞİL. TEKRAR DENEYİNİZ.")
+                    else:
+                        kullanıcı_şifre= yeni_şifre
+                        print ("PAROLALAR AYNI. TEKRARDAN HOŞGELDİNİZ:)")
+                        break
+                        break
